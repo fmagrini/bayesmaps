@@ -1,2 +1,1 @@
-# bayesmaps
-Accelerating MCMC with Transport map and INN
+# Accelerating MCMC with Optimal Transport and Invertible Neural Networks
