@@ -15,6 +15,7 @@ Transport-map proposals for efficient MCMC sampling
 =========================================================
 
 **Fabrizio Magrini** :sup:`1` and **Malcolm Sambridge** :sup:`1`  
+
 :sup:`1` Australian National University, Research School of Earth Sciences, ACT, Australia
 
 ----
