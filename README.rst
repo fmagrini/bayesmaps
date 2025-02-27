@@ -4,7 +4,7 @@ Accelerating MCMC with Optimal Transport and Invertible Neural Networks
 
 
 
-.. image:: figures/tmap.png
+.. image:: figures/banner.png
    :alt: Bayesian MCMC with Transport Maps
    :width: 100%
 
