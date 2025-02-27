@@ -8,7 +8,7 @@ Accelerating MCMC with Optimal Transport and Invertible Neural Networks
    :alt: Bayesian MCMC with Transport Maps
    :width: 100%
 
-This repository stems from my recent research on accelerating Markov Chain Monte Carlo (MCMC) sampling using transport-map proposals. The method leverages **Optimal Transport Theory** to train an **Invertible Neural Network** that learns a mapping between a complex target distribution and a simpler reference distribution, such as a multivariate standard Gaussian. At each Markov chain step, samples are drawn in the reference space, mapped back onto the target space via the inverse transport map, and accepted or rejected based on a modified Metropolis-Hastings criterion. Preliminary results indicate that this approach is robust and enables more efficient proposals compared to baseline MCMC methods.
+This repository stems from my recent research on accelerating Markov Chain Monte Carlo (MCMC) sampling using transport-map proposals. The method leverages **Optimal Transport Theory** to train an **Invertible Neural Network** that learns a mapping (denoted by :math:`T` in the above figure) between a complex target distribution (:math:`\pi`) and a simpler reference distribution (:math:`\rho`), such as a multivariate standard Gaussian. At each Markov chain step, samples are drawn in the reference space, mapped back onto the target space via the inverse transport map, and accepted or rejected based on a modified Metropolis-Hastings criterion. Preliminary results indicate that this approach is robust and enables more efficient proposals compared to baseline MCMC methods.
 
 **Note:** A paper detailing this work is in preparation, and the Python codes associated with this repository will be made public upon submission.
 
