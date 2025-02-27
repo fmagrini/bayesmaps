@@ -10,7 +10,7 @@ This repository stems from my recent research on accelerating **Markov Chain Mon
 
 ---
 
-The following abstract was submitted to **EGU General Assembly 2025**:
+# Abstract submitted to EGU General Assembly 2025
 
 ### Transport-map proposals for efficient MCMC sampling
 
@@ -32,7 +32,7 @@ We illustrate the proposed paradigm both theoretically and through examples. Pre
 
 ----
 
-## Gallery
+# Gallery
 
 ![Bayesian MCMC with Transport Maps](figures/local_proposals.png)
 *Figure 2: Simple proposal distributions in the reference space (left) and their transformed counterparts in the target space (right) under the transport map. The resulting distributions enable efficient MCMC sampling.*
