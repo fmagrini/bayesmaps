@@ -29,3 +29,19 @@ The proposed method progresses iteratively. We begin with a standard sampling st
 
 We illustrate the proposed paradigm both theoretically and through examples. Preliminary results indicate that transport-map-enhanced MCMC has the potential to significantly accelerate Bayesian sampling across a range of applications.
 
+
+----
+
+## Gallery
+
+![Bayesian MCMC with Transport Maps](figures/local_proposals.png)
+*Figure 2: Simple proposal distributions in the reference space (left) and their transformed counterparts in the target space (right) under the transport map. The resulting distributions enable efficient MCMC sampling.*
+
+![Bayesian MCMC with Transport Maps](figures/tmap_samples_udpates.png)
+*Figure 3: Iterative MCMC sampling. A transport map $T_1$ is first derived from 50 samples obtained via baseline MCMC (a). This map is then used to propose new MCMC samples in the reference space (see Fig. 2), with the transformed samples shown in (b). The transport map is updated iteratively, leading to improved sampling efficiency (panels c–f). Notably, the acceptance rate increases sharply from ~33% to ~67% when reference proposals are introduced (see statistics in panels a and b).*
+
+![Bayesian MCMC with Transport Maps](figures/tmap_pullback_udpates.png)*Figure 4: Evolution of the pullback density $\tilde{\pi}_k$ induced by the transport map $T_k$ over successive updates (corresponding to those in Fig. 3). Note how $\tilde{\pi}_k$ progressively approaches the true target density $\pi$, leading to increasingly efficient proposals.*
+
+
+![Bayesian MCMC with Transport Maps](figures/tmap_pullback_vs_true_posterior.png)*Figure 5: Comparison between the true posterior $\pi$ (center), the pullback density $\tilde{\pi}_6$ (left) induced by the transport map $T_6$ from Fig. 4f, and their pointwise difference (right).*
+
