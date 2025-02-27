@@ -6,7 +6,7 @@ This repository stems from my recent research on accelerating **Markov Chain Mon
 > **Note:** A paper detailing this work is in preparation, and the Python codes associated with this repository will be made public upon submission.
 
 ![Bayesian MCMC with Transport Maps](figures/banner.png)
-*Figure 1: The transport map $T$ transforms points from the complex target distribution $\pi(\theta)$ to the simpler reference distribution $\rho(r)$.*
+*Figure 1: The transport map T transforms points from the complex target distribution π(θ) to the simpler reference distribution ρ(r).*
 
 ---
 
@@ -38,10 +38,12 @@ We illustrate the proposed paradigm both theoretically and through examples. Pre
 *Figure 2: Simple proposal distributions in the reference space (left) and their transformed counterparts in the target space (right) under the transport map. The resulting distributions enable efficient MCMC sampling.*
 
 ![Bayesian MCMC with Transport Maps](figures/tmap_samples_udpates.png)
-*Figure 3: Iterative MCMC sampling. A transport map $T_1$ is first derived from 50 samples obtained via baseline MCMC (a). This map is then used to propose new MCMC samples in the reference space (see Fig. 2), with the transformed samples shown in (b). The transport map is updated iteratively, leading to improved sampling efficiency (panels c–f). Notably, the acceptance rate increases sharply from ~33% to ~67% when reference proposals are introduced (see statistics in panels a and b).*
+*Figure 3: Iterative MCMC sampling. A transport map T₁ is first derived from 50 samples obtained via baseline MCMC (a). This map is then used to propose new MCMC samples in the reference space (see Fig. 2), with the transformed samples shown in (b). The transport map is updated iteratively, leading to improved sampling efficiency (panels c–f). Notably, the acceptance rate increases sharply from ~33% to ~67% when reference proposals are introduced (see statistics in panels a and b).*
 
-![Bayesian MCMC with Transport Maps](figures/tmap_pullback_udpates.png)*Figure 4: Evolution of the pullback density $\tilde{\pi}_k$ induced by the transport map $T_k$ over successive updates (corresponding to those in Fig. 3). Note how $\tilde{\pi}_k$ progressively approaches the true target density $\pi$, leading to increasingly efficient proposals.*
+![Bayesian MCMC with Transport Maps](figures/tmap_pullback_udpates.png)*Figure 4: Evolution of the pullback density 𝜋̃ₖ induced by the transport map Tₖ over successive updates (corresponding to those in Fig. 3). Note how 𝜋̃ₖ progressively approaches the true target density 𝜋, leading to increasingly efficient proposals.*
 
 
-![Bayesian MCMC with Transport Maps](figures/tmap_pullback_vs_true_posterior.png)*Figure 5: Comparison between the true posterior $\pi$ (center), the pullback density $\tilde{\pi}_6$ (left) induced by the transport map $T_6$ from Fig. 4f, and their pointwise difference (right).*
+
+![Bayesian MCMC with Transport Maps](figures/tmap_pullback_vs_true_posterior.png)*Figure 5: Comparison between the true posterior 𝜋 (center), the pullback density 𝜋̃₆ (left) induced by the transport map T₆ from Fig. 4f, and their pointwise difference (right).*
+
 
