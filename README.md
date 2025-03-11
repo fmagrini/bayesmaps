@@ -46,3 +46,5 @@ We illustrate the proposed paradigm both theoretically and through examples. Pre
 ![Bayesian MCMC with Transport Maps](figures/tmap_pullback_vs_true_posterior.png)*Figure 5: Comparison between the true posterior 𝜋 (center), the pullback density 𝜋̃₆ (left) induced by the transport map T₆ from Fig. 4f, and their pointwise difference (right).*
 
 
+![Bayesian MCMC with Transport Maps](figures/IAT_ESS_hist.png)*Figure 6: Sampling efficiency comparison between transport-map-accelerated MCMC (TMap MCMC) and baseline (Vanilla) MCMC. Left: Integrated Autocorrelation Time (IAT) as a function of dimension, showing reduced correlation and faster mixing for TMap MCMC. Right: Effective Sample Size (ESS) as a function of dimension, showing a more than tenfold increase for TMap MCMC over Vanilla MCMC. These results indicate that TMap MCMC produces significantly more statistically independent samples for a given computational cost, thereby reducing the number of forward model evaluations required to achieve accurate posterior estimates.*
+
